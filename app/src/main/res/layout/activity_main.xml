@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:background="@android:color/holo_purple"
+    tools:context="com.example.sanakazi.ratingbaranimation.MainActivity">
+
+   <!--will go-->
+  <LinearLayout
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+                 <ProgressBar
+              android:id="@+id/progressBar_willgo"
+              style="?android:attr/progressBarStyleHorizontal"
+              android:layout_width="65dp"
+              android:layout_height="65dp"
+              android:layout_gravity="center"
+              android:indeterminate="false"
+              android:max="100"
+              android:padding="10dp"
+              android:progress="0"
+              android:progressDrawable="@drawable/style_circular_fill_green"
+              android:secondaryProgress="100" />
+
+
+                  <ImageView
+          android:id="@+id/img_will_go"
+          android:layout_width="35dp"
+          android:layout_height="35dp"
+          android:layout_gravity="center"
+          android:src="@mipmap/will_go"
+          android:padding="5dp"
+
+          />
+            </FrameLayout>
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Will go"
+               android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/txt_willgo_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+
+
+  </LinearLayout>
+
+
+    <!--wont go-->
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar_wontgo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:max="100"
+            android:padding="10dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/style_circular_fill_red"
+            android:secondaryProgress="100" />
+
+
+        <ImageView
+            android:id="@+id/wont_go"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/wont_go"
+            android:padding="5dp"
+            />
+       </FrameLayout>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Won`t go"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/txt_wontgo_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <!--maybe-->
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+           <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar_maybe"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:max="100"
+            android:padding="10dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/style_circular_fill_orange"
+            android:secondaryProgress="100" />
+
+        <ImageView
+            android:id="@+id/img_maybe"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/maybe_icon"
+            android:padding="5dp"
+            />
+        </FrameLayout>
+
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maybe"
+            android:layout_gravity="center_horizontal"/>
+           <TextView
+            android:id="@+id/txt_maybe_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+   <!-- buy-->
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+          <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar_buy"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:max="100"
+            android:padding="10dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/style_circular_fill"
+            android:secondaryProgress="100" />
+
+        <ImageView
+            android:id="@+id/img_buy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/but_ticket"
+            android:padding="5dp"
+            />
+
+        </FrameLayout>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy ticket"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+</LinearLayout>
